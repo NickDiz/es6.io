@@ -20,6 +20,7 @@
 <script>
   function sanitize(strings, ...values) {
     const dirty = strings.reduce((prev, next, i) => `${prev}${next}${values[i] || ''}`, '');
+    console.log(dirty); 
     return DOMPurify.sanitize(dirty);
   }
 

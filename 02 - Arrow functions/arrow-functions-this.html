@@ -61,6 +61,18 @@
   </div>
 
   <script>
+    console.log('no func this', this); 
+
+    function hello(){
+      console.log('reg', this); 
+    }
+
+    const hello2 = () =>{
+      console.log('arrow', this); 
+    }
+
+    hello(); 
+    hello2(); 
   </script>
 
 </body>
