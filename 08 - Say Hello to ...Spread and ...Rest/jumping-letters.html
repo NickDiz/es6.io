@@ -30,7 +30,23 @@
   <h2 class="jump">SPREADS!</h2>
 
 <script>
-  
+  // var element = document.querySelector('.jump');
+
+  // element.innerHTML = spreadWord(element.textContent); 
+
+  // function spreadWord(word){
+  //    return [...word].map(letter => document.body.innerHTML += (`<span class="jump">${letter}</span>`));
+  // }
+
+  const heading = document.querySelector('.jump');
+  console.log(sparanWrap(heading.textContent));
+  heading.innerHTML = sparanWrap(heading.textContent);
+
+  function sparanWrap(word) {
+    return [...word].map(letter => `<span>${letter}</span>`).join("");
+  }
+
+
 </script>
 </body>
 </html>
